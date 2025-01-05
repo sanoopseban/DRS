@@ -1,0 +1,257 @@
+.services-list-section{
+    padding: 120px 0;
+}
+
+.services-list-section .services-wrap{
+    display: flex;
+    padding-bottom: 60px;
+}
+
+.services-list-section .services-image{
+    width: 40%;
+    padding-right: 30px;
+}
+.services-list-section .services-image img{
+    width: 100%;
+}
+.services-list-section .service-content{
+    width: 60%;
+    padding-left: 20px;
+}
+
+.services-list-section .service-content h5{
+    font-size: 23px;
+  color: var(--secondary-color);
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.services-list-section .service-content ul {
+    padding-left: 20px;
+}
+.services-list-section .service-content li{
+    font-size: 20px;
+  font-weight: 400;
+  color: var(--dark-gray);
+  margin-bottom: 0;
+  line-height: 1.3;
+  margin-bottom: 15px;
+  padding-left: 15px;
+}
+
+@media (max-width: 1400px) {
+    .services-list-section{
+        padding: 60px 0;
+    }
+}
+@media (max-width: 1200px) {
+    .services-list-section{
+        padding: 60px 16px;
+    }
+    .find-us-on{
+        padding-top: 30px;
+    }
+}
+@media (max-width: 767px) {
+    .services-list-section{
+        padding: 60px 0px;
+    }
+    .services-list-section .services-image{
+        width: 100%;
+        padding-right: 0px;
+    }
+    .services-list-section .service-content{
+        width: 100%;
+        padding-left: 0px;
+        padding-top: 30px;
+    }
+    .services-wrap{
+        flex-wrap: wrap;
+    }
+}
+
+
+
+/* book-an-appointment */
+
+.book-an-appointment{
+    padding-top: 60px;
+}
+.book-an-appointment form{
+    width: 70%;
+    margin: 0 auto;
+}
+.book-an-appointment form .form-group{
+    margin-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.book-an-appointment form .form-control{
+    height: 54px;
+}
+
+.form-row{
+    margin: 0 -15px;
+}
+.book-an-appointment form  p{
+    font-size: 16px;
+    color: var(--secondary-color);
+}
+.book-an-appointment form .error{
+    color: red;
+    position: absolute;
+}
+
+.book-an-appointment form label{
+    font-size: 18px;
+  font-weight: 400;
+  color: var(--dark-gray);
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+.book-an-appointment h2{
+    font-size: 60px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.book-an-appointment .otp-form .form-control{
+    height: 65px;
+}
+.book-an-appointment .otp-form {
+    width: 40%;
+}
+.book-an-appointment .otp-form button{
+    margin-top: 32px;
+}
+form textarea{
+    height: auto!important;
+}
+
+@media (max-width: 1200px) {
+    .book-an-appointment{
+        padding: 60px 16px 0;
+    }
+}
+@media (max-width: 767px) {
+    .book-an-appointment h2{
+        font-size: 35px;
+    }
+    .book-an-appointment form{
+        width: 100%;
+    }
+    .book-an-appointment{
+        padding: 60px 0px 0;
+    }
+    .book-an-appointment .otp-form {
+        width: 100%;
+    }
+}
+
+
+.contactus-bg{
+    background-image: url(../images/Asset-28-8.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 40px 0;
+  height: 690px;
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.Contact-us{
+    /* width: 70%; */
+  margin: 0 auto;   
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.Contact-us h3{
+    width: 100%;
+    text-align: center;
+    font-size: 55px;
+    color: var(--secondary-color);
+    font-weight: 600;
+    margin-bottom: 70px;
+}
+.Contact-us img{
+    width: 55px;
+}
+.conatct-wrap {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    /* width: 25%; */
+    flex-direction: column;
+}
+.conatct-wrap div{
+    padding-top: 0px;
+}
+.conatct-wrap div h4{
+    margin-bottom: 15px;
+  font-size: 23px;
+  color: var(--secondary-color);
+  font-weight: 700;
+  line-height: 1;
+}
+.conatct-wrap div p{
+    font-size: 20px;
+  font-weight: 400;
+  color: var(--white-color);
+  margin-bottom: 0;
+  line-height: 1.3;
+}
+.conatct-wrap div p a{
+    color: var(--white-color);
+}
+/* .conatct-wrap.Social {
+    width: 40%;
+} */
+.conatct-wrap.Social ul{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    gap: 20px;
+}
+
+.conatct-wrap.Social ul li a svg {
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    padding: 5px;
+  }
+
+  .conatct-wrap.Social ul li a:hover svg {
+    background-color: var(--white-color);
+  }
+
+@media (max-width: 1200px) {
+    .contactus-bg{
+        padding: 0px 16px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .contactus-bg{
+        padding: 60px 0px 0;
+        text-align: center;
+        height: 1300px;
+    }
+    .conatct-wrap{
+        margin-bottom: 50px;
+    }
+    .conatct-wrap, .conatct-wrap div{
+        width: 100%;
+        align-items: center;
+    }
+    .Contact-us h3{
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+    .conatct-wrap.Social ul{
+        justify-content: center;
+    }
+}
