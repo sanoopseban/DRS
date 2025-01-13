@@ -18,10 +18,14 @@
   <meta name="twitter:description" content="">
   <meta name="twitter:image" content="">
 
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
@@ -174,15 +178,41 @@
     </div>
   </div>
 </section>
-<section class="why-choose-us">
+<!-- <section class="why-choose-us">
   <div class="container">
     <h1>Why Choose<br>
       DRS Solutions?</h1>
   </div>
+</section> -->
+
+<section class="counter-block">
+  <div class="container">
+    <div class="counter-block-wrap">
+      <div>
+       <h2 class="count"><span class="counter-value" data-count="6000"></span><span>+</span></h2>
+       <p>Happy Clients</p>
+      </div>
+      <div>
+         <h2 class="count"><span class="counter-value" data-count="130"></span><span>+</span></h2>
+         <p>Lorem Ipsum</p>
+      </div>
+      <div>
+         <h2 class="count"><span class="counter-value" data-count="100"></span><span>%</span></h2>
+         <p>Lorem Ipsum</p>
+      </div>
+
+      <div>
+         <h2 class="count"><span class="counter-value" data-count="100"></span><span>%</span></h2>
+         <p>Lorem Ipsum</p>
+      </div>
+    </div>
+    </div>
 </section>
 
 <section class="why-choose-us-content">
   <div class="container">
+    <h1 class="text-center">Why Choose
+      DRS Solutions?</h1>
     <div class="why-choose-us-wrap">
       <div class="why-choose-us-box">
         <img src="images/Asset 6-8.png" alt="">
@@ -396,6 +426,29 @@ var swiper = new Swiper(".service-slider", {
           spaceBetween: 80,
         },
       },
+    });
+
+
+var a = 0;
+    $(window).scroll(function() {
+            $('.counter-value').each(function() {
+                var $this = $(this), countTo = $this.attr('data-count');
+                $({countNum: $this.text()}).animate({
+                    countNum: countTo
+                },
+                {
+                    duration: 3000,
+                    easing: 'swing',
+                    step: function() {
+                        $this.text(Math.floor(this.countNum));
+                    },
+                    complete: function() {
+                        $this.text(this.countNum);
+//alert('finished');
+}
+});
+            });
+            a = 1;
     });
 </script>
 </body>

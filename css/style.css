@@ -4,7 +4,7 @@
     --secondary-color: #fbb03b;
     --white-color: #fff;
     --black-color: #000;
-    --primary-font: "Open Sans", serif;
+    --primary-font: "Nunito", serif;
   }
   @import url(banner.css);
 
@@ -240,6 +240,13 @@
     margin-bottom: 0;
   }
 
+  .why-choose-us-content h1{
+    font-size: 60px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 70px;
+  }
+
   .why-choose-us-wrap{
     display: flex;
     justify-content: space-between;
@@ -286,9 +293,15 @@
     .why-choose-us-content h5{
       font-size: 20px;
     }
+    .why-choose-us-content h1{
+    font-size: 50px;
+  }
   }
 
   @media (max-width: 767px) {
+.why-choose-us-content h1{
+    font-size: 35px!important;
+  }
     .why-choose-us-content{
       padding-top: 60px;
       padding-bottom: 20px;
@@ -571,9 +584,31 @@
     }
   }
   
-
-
-
+.counter-block{
+  background-color: var(--primary-color);
+}
+.counter-block-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 15px;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  row-gap: 50px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.counter-block-wrap  h2 {
+  font-weight: 700;
+  font-size: 60px;
+  color: var(--secondary-color);
+}
+.counter-block-wrap p{
+  margin-bottom: 0;
+  color: var(--white-color);
+  font-weight: 600;
+  font-size: 20px;
+}
 
 
 .floating-whatsapp{
@@ -581,6 +616,12 @@
   bottom: 20%;
   right: 30px;
   z-index: 999;
+}
+
+@media (max-width: 767px) {
+  .counter-block-wrap  h2 {
+  font-size: 30px;
+}
 }
 
 
