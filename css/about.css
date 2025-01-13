@@ -8,11 +8,10 @@
     height: 600px;
     display: flex;
     align-items: center;
-    margin-top: 60px;
   }
 
   .about-us h1{
-    font-size: 80px;
+    font-size: 60px;
     font-weight: 700;
     color: var(--white-color);
     margin-bottom: 0;
@@ -20,7 +19,7 @@
   }
   @media (max-width: 1400px) {
     .about-us h1{
-        font-size: 60px;
+        font-size: 50px;
       }
       .about-us{
         height: 500px;
@@ -50,7 +49,7 @@
     padding: 10px 0 60px;
   }
   .about-para h3{
-    font-size: 30px;
+    font-size: 24px;
     color: var(--dark-gray);
     text-align: center;
     width: 55%;
@@ -66,7 +65,7 @@
   @media (max-width: 767px) {
     .about-para h3{
         width: 100%;
-        font-size: 27px;
+        font-size: 20px;
     }
     .about-para {
         padding: 10px 0 30px;
@@ -79,26 +78,26 @@
     background-repeat: no-repeat;
     background-position: center;
     padding: 120px 0;
-    height: 700px;
+    height: 670px;
     display: flex;
     align-items: center;
   }
   .about-overview h2{
-    font-size: 80px;
+    font-size: 65px;
   font-weight: 700;
   color: var(--primary-color);
   margin-bottom: 30px;
   }
 
   .about-overview p{
-    font-size: 20px;
+    font-size: 16px;
   font-weight: 400;
   color: var(--white-color);
-  width: 40%;
+  width: 50%;
   }
   @media (max-width: 1400px) {
     .about-overview h2{
-        font-size: 65px;
+        font-size: 50px;
     }
   }
   @media (max-width: 1200px) {
@@ -127,7 +126,7 @@
   }
 
   .our-mission h2{
-    font-size: 80px;
+    font-size: 60px;
   font-weight: 700;
   color: var(--primary-color);
   margin-bottom: 60px;
@@ -157,7 +156,7 @@
   line-height: 1;
   }
   .our-mission .mission-wrap .icon-heading  p, .our-mission .mission-wrap .icon-heading  li{
-    font-size: 20px;
+    font-size: 16px;
   font-weight: 400;
   color: var(--dark-gray);
   margin-bottom: 0;
@@ -200,7 +199,7 @@
         padding-bottom: 60px;
     }
     .our-mission h2{
-        font-size: 65px;
+        font-size: 50px;
     }
   }
   @media (max-width: 1200px) {
@@ -254,14 +253,14 @@
   }
 
   .demo-button-block h2{
-    font-size: 80px;
+    font-size: 50px;
     font-weight: 700;
     color: var(--secondary-color);
     margin-bottom: 40px;
     text-align: center;
   }
   .demo-button-block p{
-    font-size: 30px;
+    font-size: 24px;
   color: var(--white-color);
   font-weight: 400;
   width: 70%;
@@ -275,10 +274,10 @@
 
   @media (max-width: 1400px) {
     .demo-button-block h2{
-        font-size: 65px;
+        font-size: 50px;
     }
     .demo-button-block p{
-        font-size: 27px;
+        font-size: 24px;
       }
   }
 
@@ -298,7 +297,7 @@
     padding: 60px 0 120px;
   }
   .find-us-on h2{
-    font-size: 80px;
+    font-size: 50px;
   font-weight: 700;
   color: var(--secondary-color);
   margin-bottom: 70px;
@@ -315,7 +314,7 @@
   } 
   @media (max-width: 1400px) {
     .find-us-on h2{
-        font-size: 65px;
+        font-size: 50px;
     }
   }
   @media (max-width: 1200px) {
