@@ -49,7 +49,7 @@
     padding: 10px 0 60px;
   }
   .about-para h3{
-    font-size: 24px;
+    font-size: 20px;
     color: var(--dark-gray);
     text-align: center;
     width: 55%;
@@ -98,6 +98,11 @@
   @media (max-width: 1400px) {
     .about-overview h2{
         font-size: 50px;
+        
+    }
+    .about-overview{
+      padding: 60px 0;
+      height: 480px;
     }
   }
   @media (max-width: 1200px) {
@@ -197,6 +202,7 @@
   @media (max-width: 1400px) {
     .our-mission{
         padding-bottom: 60px;
+        padding-top: 60px;
     }
     .our-mission h2{
         font-size: 50px;
@@ -273,6 +279,9 @@
   }
 
   @media (max-width: 1400px) {
+    .demo-button-block{
+      height: 530px;
+    }
     .demo-button-block h2{
         font-size: 50px;
     }

@@ -55,6 +55,9 @@
                 <a class="nav-link" href="services.html">OUR STORY</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="contact.html">Book an appointment</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="contact.html">CONTACT US</a>
               </li>
             </ul>
@@ -71,7 +74,9 @@
                       <h1 class="bigTitle">Expert Pest
                         Control Services
                         for Every Need</h1>
+                        <a href="#" class="btn btn-primary mt-3 d-none md:d-block">Book an appointment</a>
                       <img src="images/banner-mob.png" class="img-fluid" alt="">
+
                   </div>
               </div>
           </div>
@@ -80,7 +85,8 @@
                   <div class="container">
                     <h1 class="bigTitle ">Expert Pest
                       Control Services
-                      for Every Need</h1>        
+                      for Every Need</h1>    
+                      <a href="#" class="btn btn-primary mt-3 d-none md:d-block">Book an appointment</a>    
                       <img src="images/banner-mob.png" class="img-fluid" alt="">              
                   </div>
               </div>
@@ -91,6 +97,7 @@
                       <h1 class="bigTitle color-white">Expert Pest
                         Control Services
                         for Every Need</h1>   
+                        <a href="#" class="btn btn-primary mt-3 d-none md:d-block">Book an appointment</a>
                         <img src="images/banner-mob.png" class="img-fluid" alt="">                     
                     </div>
                 </div>
@@ -101,7 +108,8 @@
                     <div class="container">
                       <h1 class="bigTitle color-white">Expert Pest
                         Control Services
-                        for Every Need</h1>   
+                        for Every Need</h1>  
+                        <a href="#" class="btn btn-primary mt-3 d-none md:d-block">Book an appointment</a> 
                         <img src="images/banner-mob.png" class="img-fluid" alt="">                     
                     </div>
                 </div>
@@ -206,7 +214,7 @@
          <p>Lorem Ipsum</p>
       </div>
     </div>
-    </div>
+  </div>
 </section>
 
 <section class="why-choose-us-content">
@@ -274,7 +282,7 @@
   <div class="container">
     <h2>What Our Customers Say</h2>
 
-    <div class="testimonial-wrap">
+    <!-- <div class="testimonial-wrap">
       <div class="testimonial-box">
         <img src="images/_Group_.png" alt="">
         <p>DRS Solutions quickly solved our
@@ -301,6 +309,57 @@
           everything in detail.</p>
           <p class="customer-name">- Ravi P</p>
       </div>
+    </div> -->
+
+    <div class="swiper testimonial-wrap">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="testimonial-box">
+            <img src="images/_Group_.png" alt="">
+            <p>DRS Solutions quickly solved our
+              cockroach issue, and we haven’t
+              seen one since! Their team is
+              professional, and their pricing is
+              fair. Highly recommend!</p>
+              <p class="customer-name">- John D</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testimonial-box">
+            <img src="images/_Group_.png" alt="">
+            <p>DRS Solutions quickly solved our
+              cockroach issue, and we haven’t
+              seen one since! Their team is
+              professional, and their pricing is
+              fair. Highly recommend!</p>
+              <p class="customer-name">- John D</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testimonial-box">
+            <img src="images/_Group_.png" alt="">
+            <p>DRS Solutions quickly solved our
+              cockroach issue, and we haven’t
+              seen one since! Their team is
+              professional, and their pricing is
+              fair. Highly recommend!</p>
+              <p class="customer-name">- John D</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testimonial-box">
+            <img src="images/_Group_.png" alt="">
+            <p>DRS Solutions quickly solved our
+              cockroach issue, and we haven’t
+              seen one since! Their team is
+              professional, and their pricing is
+              fair. Highly recommend!</p>
+              <p class="customer-name">- John D</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next testimonial-swiper-button-next"></div>
+      <div class="swiper-button-prev testimonial-swiper-button-prev"></div>
     </div>
   </div>
 </section>
@@ -403,7 +462,7 @@
 
 var swiper = new Swiper(".service-slider", {
       slidesPerView: 1,
-      spaceBetween: 30,
+      spaceBetween: 10,
       navigation: {
         nextEl: ".service-swiper-button-next",
         prevEl: ".service-swiper-button-prev",
@@ -422,11 +481,40 @@ var swiper = new Swiper(".service-slider", {
           spaceBetween: 40,
         },
         1600: {
-          slidesPerView: 3,
-          spaceBetween: 80,
+          slidesPerView: 4,
+          spaceBetween: 30,
         },
       },
     });
+
+    var swiper = new Swiper(".testimonial-wrap", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".testimonial-swiper-button-next",
+        prevEl: ".testimonial-swiper-button-prev",
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+        1600: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+      },
+    });
+
+    
 
 
 var a = 0;
