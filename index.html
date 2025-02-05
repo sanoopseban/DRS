@@ -181,6 +181,7 @@
           </div>
         </div>
       </div>
+      <div class="swiper-pagination "></div>
       <div class="swiper-button-next service-swiper-button-next"></div>
     <div class="swiper-button-prev service-swiper-button-prev"></div>
     </div>
@@ -358,6 +359,7 @@
           </div>
         </div>
       </div>
+      <div class="swiper-pagination "></div>
       <div class="swiper-button-next testimonial-swiper-button-next"></div>
       <div class="swiper-button-prev testimonial-swiper-button-prev"></div>
     </div>
@@ -426,7 +428,7 @@
   <a href="https://wa.me/9591412148" target="_blank"><img src="images//WhatsApp.svg.webp" alt=""></a>
 </div>
 <div class="floating-support">
-  <a href="book-an-appointment.html"><img src="images//customer-care.svg" alt=""></a>
+  <a href="book-an-appointment.html">Book now</a>
 </div>
 
 <div class="floating-btn-wrap">
@@ -467,6 +469,9 @@ var swiper = new Swiper(".service-slider", {
         nextEl: ".service-swiper-button-next",
         prevEl: ".service-swiper-button-prev",
       },
+      pagination: {
+        el: ".swiper-pagination",
+      },
       breakpoints: {
         640: {
           slidesPerView: 1,
@@ -494,10 +499,15 @@ var swiper = new Swiper(".service-slider", {
         nextEl: ".testimonial-swiper-button-next",
         prevEl: ".testimonial-swiper-button-prev",
       },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
       breakpoints: {
         640: {
           slidesPerView: 1,
           spaceBetween: 20,
+          
         },
         768: {
           slidesPerView: 2,

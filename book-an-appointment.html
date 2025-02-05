@@ -128,7 +128,7 @@
             <div class="form-row">
               <div class="form-group mb-0 col-md-6">
                 <label for="email">Choose Date</label>
-                <input type="date" class="form-control" id="email" placeholder="Email Address">
+                <input type="text" class="form-control calendar" id="datepicker"  placeholder="Date">
               </div>
               <div class="form-group mb-0 col-md-6">
                 <label for="mobile">Choose Time</label>
@@ -229,9 +229,17 @@
     </div>
   </footer>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
+<script type="text/javascript">
+jQuery(document).ready(function () {
+        jQuery('#datepicker').datepicker({
+            format: 'dd-mm-yyyy',
+            startDate: '+1d'
+        });
+    });
+</script>
   </body>
 </html>
